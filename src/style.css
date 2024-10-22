@@ -1,5 +1,5 @@
 body {
-  font-family: Verdana, Sans-Serif;
+  font-family: Verdana, Sans-Serif;  
 }
 
 .main {
@@ -31,18 +31,22 @@ body {
 .main > h1,
 .main > p {
   text-align: center;
-  font-family: 35px;
   z-index: 2;
   position: relative;
 }
 
+.main >p{
+  font-size: 18px;
+  margin-top: -10px;
+}
+
 /* Squared background */
 .main-content {
-  background-color: rgb(95, 161, 153, .9);
-  max-width: 750px;
+  background-color: rgb(95, 161, 153, .8);
+  max-width: 650px;
   display: flex;
   flex-direction: column;
-  padding: 40px;
+  padding: 30px;
   margin: 0 auto;
   margin-bottom: 40px;
   border-radius: 5px;
@@ -51,26 +55,47 @@ body {
   box-shadow: 0px -1px 10px 5px rgb(112, 186, 171, 0.8);
 }
 
-#name, #email, #number, #dropdown, #comment {
+.question {
+  margin-top: 10px; 
+}
+.question p,
+.question label,
+.question legend {
+  font-size: 17px;
+}
+
+#name, #email, #number, #dropdown, #comment, #comment2 {
     display: block;
     width: 97%;
-    height: 35px;
+    height: 20px;
     padding: 5px 10px;
     color: #000000;
     background-color: #ffffff;
     border: 1px solid #ededed;
     border-radius: 8px;
-    font-size: 20px;
-    margin-bottom: 30px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+#dropdown{  
+  height: 32px;
+  color: gray;
+  width: 100%;  
 }
 
 label[for=name], 
 label[for=email],
 label[for=number],
 label[for=dropdown],
-label[for=comment] {
-  margin-bottom: 10px;
+label[for=comment],
+label[for=comment2]{
+  margin-bottom: 5px;
   display: inline-block;
+  font-size: 17px;
+}
+
+fieldset[for=radio]{
+  font-size: 17px;
 }
 
 label[for=comment] {
@@ -78,9 +103,12 @@ label[for=comment] {
 }
 
 legend {
-  padding-top: 30px;
+  padding-top: 10px;
   }
 
+#checkbox {
+  font-size: 17px;
+}
 #pick-it-up, 
 #swim-out,
 #ignore-it,
@@ -88,16 +116,12 @@ fieldset input {
   height: 20px;
   width: 20px;
   margin-right: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   padding-top: 50px;
 }
 
-#comment {
-  min-height: 80px;
-}
-
-label[for=comment]{
-  margin-top: 20px;
+#comment, #comment2 {
+  min-height: 50px;
 }
 
 textarea {
@@ -105,17 +129,17 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  font-size: 14px;
 }
 
 #submit {
   display: block;
   width: 100%;
-  padding: 0.75rem;
+  padding: 0.50rem;
   background: #62bfa2;
   border-radius: 2px;
   cursor: pointer;
   border: 0;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 18px;
 }
-
